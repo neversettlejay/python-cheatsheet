@@ -6,6 +6,20 @@ Comprehensive Python Cheatsheet
 ![Monty Python](web/image_888.jpeg)
 
 
+Some common python code snippets
+--------
+```
+class car:  
+    def __init__(self,modelname, year):  
+        self.modelname = modelname  
+        self.year = year  
+    def display(self):  
+        print(self.modelname,self.year)  
+  
+c1 = car("Toyota", 2016)  
+c1.display()  
+```
+
 Contents
 --------
 **&nbsp;&nbsp;&nbsp;** **1. Collections:** **&nbsp;** **[`List`](#list)**__,__ **[`Dictionary`](#dictionary)**__,__ **[`Set`](#set)**__,__ **[`Tuple`](#tuple)**__,__ **[`Range`](#range)**__,__ **[`Enumerate`](#enumerate)**__,__ **[`Iterator`](#iterator)**__,__ **[`Generator`](#generator)**__.__  
