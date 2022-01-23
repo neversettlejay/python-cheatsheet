@@ -19,6 +19,121 @@ class car:
 c1 = car("Toyota", 2016)  
 c1.display()  
 ```
+```
+class Employee:    
+    id = 10   
+    name = "Devansh"    
+    def display (self):    
+        print(self.id,self.name)    
+"""Here, the self is used as a reference variable, which refers to the current class object. It is always the first argument in the function definition. However, using self is optional in the function call."""
+```
+
+```
+class Employee:    
+    id = 10   
+    name = "John"    
+    def display (self):    
+        print("ID: %d \nName: %s"%(self.id,self.name))    
+# Creating a emp instance of Employee class  
+emp = Employee()    
+emp.display()   
+```
+
+```
+class Calculation1:  
+    def Summation(self,a,b):  
+        return a+b;  
+class Calculation2:  
+    def Multiplication(self,a,b):  
+        return a*b;  
+class Derived(Calculation1,Calculation2):  
+    def Divide(self,a,b):  
+        return a/b;  
+d = Derived()  
+print(d.Summation(10,20))  
+print(d.Multiplication(10,20))  
+print(d.Divide(10,20))  
+```
+
+
+```
+"""Abstraction is an important aspect of object-oriented programming. In python, we can also perform data hiding by adding the double underscore (___) as a prefix to the attribute which is to be hidden. After this, the attribute will not be visible outside of the class through the object."""
+
+class Employee:  
+    __count = 0;  
+    def __init__(self):  
+        Employee.__count = Employee.__count+1  
+    def display(self):  
+        print("The number of employees",Employee.__count)  
+emp = Employee()  
+emp2 = Employee()  
+try:  
+    print(emp.__count)  
+finally:  
+    emp.display()  
+
+```
+
+```
+mytuple = ("apple", "banana", "cherry")
+myit = iter(mytuple)
+
+print(next(myit))
+print(next(myit))
+print(next(myit))
+
+```
+
+
+```
+# Python program to define   
+# abstract class  
+  
+from abc import ABC  
+  
+class Polygon(ABC):   
+  
+   # abstract method   
+   def sides(self):   
+      pass  
+  
+class Triangle(Polygon):   
+  
+     
+   def sides(self):   
+      print("Triangle has 3 sides")   
+  
+class Pentagon(Polygon):   
+  
+     
+   def sides(self):   
+      print("Pentagon has 5 sides")   
+  
+class Hexagon(Polygon):   
+  
+   def sides(self):   
+      print("Hexagon has 6 sides")   
+  
+class square(Polygon):   
+  
+   def sides(self):   
+      print("I have 4 sides")   
+  
+# Driver code   
+t = Triangle()   
+t.sides()   
+  
+s = square()   
+s.sides()   
+  
+p = Pentagon()   
+p.sides()   
+  
+k = Hexagon()   
+K.sides()   
+
+```
+
 
 Contents
 --------
